@@ -11,7 +11,7 @@
     list-style: none;
     scroll-behavior: smooth;
 }
-
+/* todo: usunac nie potrzebne kolory i dodac w kodzie potrzebne */
 :root {
     --clr-bcg: #e63946;
     --clr-bcg2: #efffef;
@@ -35,9 +35,10 @@
     --second-color: #457b9d;
     --other-color: #12141c;
     --h1-font: 5rem;
-    --h3-font: 3rem;
+    --h2-font: 3.5rem;
+    --h3-font: 2.5rem;
     --h4-font: 2rem;
-    --p-font: 1rem;
+    --p-font: 1.5rem;
 }
 
 html {
@@ -66,25 +67,25 @@ header {
     display: flex;
 }
 
-.logo-name {
+.name-white {
     color: var(--clr-2);
     font-size: 2.5rem;
     font-weight: 600;
 }
 
-.logo-s-name {
+.name-red {
     color: var(--clr-1);
 }
 
 .navbar a {
-    display: flex;
+    /* display: flex; */
     color: var(--second-color);
     font-size: 1.8rem;
     font-weight: 600;
     padding: 5px 10px;
     margin: 0 20px;
     border-radius: 0.5rem;
-    transition: all 0.8s ease;
+    transition: all 0.7s ease;
 }
 
 .navbar a:hover {
@@ -104,43 +105,36 @@ section {
     padding: 160px 14% 90px;
 }
 
+/* home */
+
 .home {
     height: 100vh;
     width: 100%;
-    position: relative;
-    /* background: url(../images/bcgPicture.jpg); */
-    background-size: cover;
-    background-position: center;
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.home-text h4 {
-    margin: 20px 0;
-    font-size: var(--h4-font);
-    font-weight: bold;
-    /* line-height: 1.1; */
+.home-text h3 {
+    margin: 20px 0px;
+    font-size: var(--h3-font);
     letter-spacing: 2px;
 }
 
 .home-text h1 {
     margin: 20px 20px;
     font-size: var(--h1-font);
-    font-weight: bold;
-    /* line-height: 1.3; */
+    letter-spacing: 3px;
+}
+
+.home-text h2 {
+    margin: 20px 40px;
+    font-size: var(--h2-font);
     letter-spacing: 2px;
 }
 
-.home-text h3 {
-    margin: 20px 50px;
-    font-size: var(--h3-font);
-    font-weight: bold;
-    /* line-height: 1.8; */
-    letter-spacing: 2px;
-}
-
-img {
+.img-pp {
     margin: 0 150px;
     opacity: 0.9;
 }
@@ -162,7 +156,7 @@ img {
     background-color: transparent;
     color: var(--clr-2);
     border: 2px solid var(--clr-2);
-    transition: all 0.4s ease;
+    transition: all 0.6s ease;
 }
 
 .btn-cv:hover {
@@ -170,3 +164,23 @@ img {
     background-color: var(--clr-1);
     border: 2px solid var(--clr-1);
 }
+
+/* about me */
+
+.about-text h2 {
+    margin: 20px 0;
+    font-size: var(--h3-font);
+    letter-spacing: 2px;
+}
+
+.about-text p {
+    margin: 20px 0;
+    font-size: var(--p-font);
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 1.5px;
+}
+
+/* projects */
+
+/* contact */
