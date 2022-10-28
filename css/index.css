@@ -37,7 +37,7 @@
     --h1-font: 5rem;
     --h2-font: 3.5rem;
     --h3-font: 2.5rem;
-    --h4-font: 2rem;
+    --h4-font: 1.75rem;
     --p-font: 1.5rem;
 }
 
@@ -67,20 +67,20 @@ header {
     display: flex;
 }
 
-.name-white {
+.logo-name {
     color: var(--clr-2);
-    font-size: 2.5rem;
+    font-size: var(--h3-font);
     font-weight: 600;
 }
 
-.name-red {
+.logo-s-name {
     color: var(--clr-1);
 }
 
 .navbar a {
     /* display: flex; */
     color: var(--second-color);
-    font-size: 1.8rem;
+    font-size: var(--h4-font);
     font-weight: 600;
     padding: 5px 10px;
     margin: 0 20px;
@@ -92,9 +92,9 @@ header {
     color: var(--clr-2);
     background-color: var(--clr-1);
 }
-
+/* todo hamburger menu */
 #menu-icon {
-    font-size: 2.5rem;
+    font-size: var(--h3-font);
     color: var(--clr-2);
     cursor: pointer;
     display: none;
@@ -103,6 +103,7 @@ header {
 
 section {
     padding: 160px 14% 90px;
+    height: 100vh;
 }
 
 /* home */
@@ -151,7 +152,7 @@ section {
     width: 25%;
     padding: 7px 12px;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
+    font-size: var(--p-font);
     font-weight: 500;
     background-color: transparent;
     color: var(--clr-2);
@@ -165,19 +166,50 @@ section {
     border: 2px solid var(--clr-1);
 }
 
-/* about me */
+/* about */
 
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-pp2 {
+    margin: 0 50px;
+    opacity: 0.85;
+}
+
+.about-text {
+    max-width: 70rem;
+    margin: 0px 40px;
+}
 .about-text h2 {
-    margin: 20px 0;
+    color: var(--second-color);
+    /* margin: 20px 0; */
+    font-size: var(--h2-font);
+    letter-spacing: 2px;
+}
+
+.about-text h3 {
+    color: var(--clr-1);
+    margin: 1.5rem 0;
     font-size: var(--h3-font);
     letter-spacing: 2px;
 }
 
 .about-text p {
-    margin: 20px 0;
+    color: var(--clr-2);
+    margin: 1.5rem 0;
     font-size: var(--p-font);
     font-weight: bold;
     line-height: 2;
+    letter-spacing: 1.5px;
+}
+
+.about-text h4 {
+    color: var(--clr-1);
+    margin: 1.5rem 0;
+    font-size: var(--h4-font);
+    font-weight: 500;
     letter-spacing: 1.5px;
 }
 
