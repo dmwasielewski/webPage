@@ -20,7 +20,7 @@
     --clr-3: #a8dadc;
     --clr-5: #1d3557;
 
-    /* new settings */
+    /* new colours */
     --bg-color: #03051d;
     --text-color: #f1faee;
     --main-color: #e63946;
@@ -208,3 +208,11 @@ section {
 /* projects */
 
 /* contact */
+
+footer {
+    height: 25vh;
+    padding: 8rem;
+    font-size: var(--h4-font);
+    text-align: center;
+    color: var(--second-color);
+}
