@@ -25,7 +25,7 @@
     --text-color: #f1faee;
     --main-color: #e63946;
     --second-color: #457b9d;
-    --other-color: #12141c;
+    --other-color: #060b3f;
     --h1-font: 5rem;
     --h2-font: 3.5rem;
     --h3-font: 2.5rem;
@@ -36,7 +36,6 @@
 html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
-    color: var(--main-color);
     background-color: var(--bg-color);
 }
 
@@ -49,10 +48,18 @@ header {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 22px 14%;
+    padding: 26px 14%;
     /* border-bottom: 1px solid transparent; */
     /* transition: all 0.4 ease; */
     z-index: 1000;
+}
+
+header.sticky {
+    padding: 17px 14%;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--other-color);
+    opacity: 0.95;
+    transition: 0.4s;
 }
 
 .navbar {
@@ -109,6 +116,9 @@ section {
     justify-content: space-between;
 }
 
+.home-text {
+    color: var(--main-color);
+}
 .home-text h3 {
     margin: 20px 0px;
     font-size: var(--h3-font);
