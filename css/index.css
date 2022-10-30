@@ -94,7 +94,8 @@ header {
 }
 
 section {
-    padding: 160px 14% 90px;
+    padding: 140px 14% 90px;
+    /* margin: 160px 190px; */
     height: 100vh;
 }
 
@@ -157,6 +158,8 @@ section {
     border: 2px solid var(--main-color);
 }
 
+/* projects */
+
 /* about */
 
 .about {
@@ -205,14 +208,12 @@ section {
     letter-spacing: 1.5px;
 }
 
-/* projects */
-
 /* contact */
 
 footer {
-    height: 25vh;
+    /* height: 25vh; */
     padding: 8rem;
-    font-size: var(--h4-font);
+    font-size: var(--p-font);
     text-align: center;
     color: var(--second-color);
 }
