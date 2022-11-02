@@ -13,14 +13,6 @@
 }
 /* todo: usunac nie potrzebne kolory i dodac w kodzie potrzebne */
 :root {
-    --clr-btn: #5ed2b7;
-    --clr-subText: #5f669c;
-    --clr-transition: #f97c67;
-    --clr-click: #9bc546;
-    --clr-3: #a8dadc;
-    --clr-5: #1d3557;
-
-    /* new colours */
     --bg-color: #03051d;
     --text-color: #f1faee;
     --main-color: #e63946;
@@ -199,14 +191,17 @@ section {
 .projects-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    align-items: center;
-    gap: 1.5rem;
-    margin: 3.5rem;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 3.5rem;
+    margin: 2rem;
 }
 
 .row {
-    padding: 25px;
-    background: #12141c;
+    width: 33rem;
+    /* max-width: 90%; */
+    padding: 15px;
+    background: var(--second-color);
     border-radius: 0.5rem;
     transition: all 0.4s ease;
 }
@@ -218,7 +213,7 @@ section {
 
 .row img {
     height: auto;
-    width: 50%;
+    max-width: 55%;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
 }
