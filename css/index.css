@@ -13,16 +13,23 @@
 }
 /* todo: usunac nie potrzebne kolory i dodac w kodzie potrzebne */
 :root {
-    --bg-color: #03051d;
-    --text-color: #f1faee;
-    --main-color: #e63946;
-    --second-color: #457b9d;
-    --other-color: #060b3f;
-    --h1-font: 5rem;
-    --h2-font: 3.5rem;
-    --h3-font: 2.5rem;
-    --h4-font: 1.75rem;
-    --p-font: 1.5rem;
+    --bg-color: hsl(236, 49%, 10%);
+    --other-color: hsl(235, 40%, 15%);
+    --text-color: hsl(160, 40%, 85%);
+    --text2-color: hsl(170, 70%, 90%);
+    --text3-color: hsl(190, 100%, 95%);
+    --main-color: hsl(355, 78%, 56%);
+    --second-color: hsl(203, 39%, 44%);
+    --h1-font: 3.5rem;
+    --h2-font: 2.5rem;
+    --h3-font: 2rem;
+    --h4-font: 1.5rem;
+    --p-font: 1.2rem;
+    /* 
+    --test--: hsl(225, 31%, 74%);
+    --test--2: hsl(226, 70%, 88%);
+    --test--3: hsl(214, 100%, 95%);
+     */
 }
 
 html {
@@ -39,8 +46,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 26px 14%;
+    background: var(--bg-color);
+    border-color: var(--other-color);
+    padding: 26px 10%;
     /* nie potrzebne */
     /* border-bottom: 1px solid transparent;
     transition: all 0.4 ease; */
@@ -48,9 +56,9 @@ header {
 }
 
 header.sticky {
-    padding: 17px 14%;
+    padding: 14px 10%;
     background: var(--bg-color);
-    border-bottom: 1px solid var(--other-color);
+    border-bottom: 2px solid var(--other-color);
     opacity: 0.95;
     transition: 0.4s;
 }
@@ -94,9 +102,10 @@ header.sticky {
 }
 
 section {
-    padding: 140px 14% 90px;
+    /* padding: 140px 10% 90px; */
     height: 100vh;
-    width: 100%;
+    max-width: 135rem;
+    margin: 0 auto;
 }
 
 /* home */
@@ -104,8 +113,11 @@ section {
 .home {
     /* position: relative; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* border: solid red 3px; */
+    margin-bottom: 10rem;
 }
 
 .home-text h3 {
@@ -160,7 +172,7 @@ section {
 }
 
 .home-img-pp {
-    width: 70%;
+    width: 60%;
     /* margin: 0 150px; */
     opacity: 0.9;
 }
@@ -170,7 +182,7 @@ section {
     margin: 15px;
     text-align: center;
     width: 50%;
-    padding: 7px 12px;
+    padding: 7px 7px;
     border-radius: 0.5rem;
     font-size: var(--p-font);
     font-weight: 500;
@@ -181,45 +193,87 @@ section {
 }
 
 .btn-cv:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: var(--main-color);
-    border: 2px solid transparent;
+    border: 2px solid var(--main-color);
 }
 
 /* projects */
+/* todo dodac margin do tekstow naglowkow bo nawigacja przyslania */
+
+.projects {
+    padding-top: 25vh;
+}
+
+.projects-text {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.projects-text h2 {
+    color: var(--main-color);
+    margin: 1.5rem 0;
+    /* margin-bottom: 4rem 0; */
+    font-size: var(--h2-font);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.projects-text h3 {
+    color: var(--main-color);
+    /* margin: 1.5rem 0; */
+    font-size: var(--h3-font);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    /* border: 1px solid red; */
+}
 
 .projects-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    /* align-items: center; */
-    justify-content: center;
-    gap: 3.5rem;
-    margin: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    gap: 3rem;
+    /* margin: 2rem; */
+    /* margin-top: 5rem; */
 }
 
 .row {
-    width: 33rem;
+    /* width: 40rem; */
     /* max-width: 90%; */
     padding: 15px;
-    background: var(--second-color);
-    border-radius: 0.5rem;
-    transition: all 0.4s ease;
-}
+    background: var(--other-color);
+    /* border-radius: 0.5rem; */
+    border-top: 3px solid transparent;
 
-.row:hover {
-    transform: scale(1.01) translateY(-5px);
-    cursor: pointer;
+    border-radius: 0.6rem;
+    transition: all 0.4s ease;
 }
 
 .row img {
     height: auto;
-    max-width: 55%;
-    border-radius: 0.5rem;
+    /* max-width: 55%; */
+    width: 100%;
+    border-radius: 0.6rem;
     margin-bottom: 1.5rem;
 }
 
+.row:hover {
+    transform: scale(1.04) translateY(-5px);
+    border-top: 3px solid var(--main-color);
+    cursor: pointer;
+}
+
+.main-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
 .row h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--text-color);
 }
 
@@ -229,7 +283,7 @@ section {
 }
 
 .row p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--text-color);
 }
 
