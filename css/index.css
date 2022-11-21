@@ -14,13 +14,14 @@
 /* todo: usunac nie potrzebne kolory i dodac w kodzie potrzebne */
 :root {
     /* --bg-color: hsl(236, 49%, 10%); */
-    --bg-color: #040926;
+    --bg-color: hsl(231, 81%, 8%);
     --other-color: hsl(235, 40%, 15%);
-    --text-color: hsl(160, 40%, 85%);
+    --text3-color: hsl(160, 40%, 85%);
     --text2-color: hsl(170, 70%, 90%);
-    --text3-color: hsl(190, 100%, 95%);
+    --text-color: hsl(190, 100%, 95%);
+    --textw-color: white;
     /* --main-color: hsl(355, 78%, 56%); */
-    --main-color: #db255b;
+    --main-color: hsl(342, 72%, 50%);
     /* --second-color: hsl(203, 39%, 44%); */
     --second-color: #087e8b;
     --h1-font: 3rem;
@@ -62,7 +63,7 @@ header.sticky {
     padding: 14px 10%;
     background: var(--bg-color);
     border-bottom: 2px solid var(--other-color);
-    opacity: 0.95;
+    /* opacity: 0.95; */
     transition: 0.4s;
 }
 
@@ -196,7 +197,7 @@ section {
 }
 
 .btn-cv:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     background-color: var(--main-color);
     border: 2px solid var(--main-color);
 }
@@ -431,16 +432,20 @@ footer {
     right: 4rem;
     /* margin: 2rem 0; */
 }
+
+/* todo sprawdzic border radius wszedzie procenty czy remy */
 .top i {
     color: var(--text-color);
     background: var(--second-color);
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 10px;
-    border-radius: 0.5rem;
+    border-radius: 10%;
     transition: all 0.6s ease;
 }
 
 .top i:hover {
-    transform: scale(1.2) translateY(-4px);
+    transform: scale(1.15) translateY(-4px);
+    border-radius: 20%;
+    color: var(--bg-color);
     background: var(--main-color);
 }
