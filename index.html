@@ -110,15 +110,15 @@
         <div class="about-text">
             <h2>About me</h2>
             <h3>Hi there, I'm Damian</h3>
-            <p>A Self taught junior web developer based near London. I bring a range of skills from visual design,
+            <p>A self taught junior web developer based near London. I bring a range of skills from visual design,
                 interaction design, UX, to prototyping. I'm always looking for creative people to vibe with, let's
-                connect through my social channels below. My interest lie in solving problems. I love spending time on
-                fixing things. I'm a front end developer based near London. I have been interested in IT-related topics
-                for years - starting from assembling my next computers, through helping clients as a help desk, to
-                getting acquainted with new curiosities and news from a wide range of IT. However, recently I have
+                connect through my social channels below. My interest lies in solving problems. I love spending time on
+                fixing things. I have been interested in IT-related topics for years - starting from assembling my next
+                computers, through helping clients as a help desk, to
+                getting acquainted with new technologies and news from a wide range of IT. However, recently I have
                 decided to take my interest to a slightly higher and more professional level. using the knowledge
                 gathered over the years and as a self-taught person using a number of available courses and training, I
-                learned how to design and build websites. For this, it uses the latest and most popular tools.</p>
+                learned how to design and build websites. For this, I use the latest and most popular tools.</p>
             <h4>"Hard work beats talent when talent doesn't work hard."<sub>- Tim Notke</sub></h4>
         </div>
     </section>
@@ -133,12 +133,21 @@
                     back to you!</p>
             </div>
             <div class="contact-form">
-                <form action="">
-                    <input type="text" placeholder="Enter Your Name:" required>
-                    <input type="text" placeholder="Enter Your Email:" required>
-                    <input type="text" placeholder="Enter Your Subject:">
-                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message:" required></textarea>
-                    <input type="submit" value="Submit" class="send">
+                <form method="post" action="send-email.php" id="contact-form">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name:" required>
+
+
+                    <input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                        name="email" id="email" placeholder="Enter Your Email:" required>
+
+
+                    <input type="text" name="subject" id="subject" placeholder="Enter Your Subject:">
+
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Enter Your Message:"
+                        required></textarea>
+
+                    <input type="submit" value="Submit" class="btn-send">
                 </form>
             </div>
         </div>
