@@ -11,6 +11,7 @@
   list-style: none;
   scroll-behavior: smooth;
 }
+
 /* todo: usunac nie potrzebne kolory i dodac w kodzie potrzebne */
 :root {
   /* --bg-color: hsl(236, 49%, 10%); */
@@ -70,6 +71,7 @@ header.sticky {
 .navbar {
   display: flex;
 }
+
 /* todo ustawic na klikniecie adres domeny strony */
 .logo-name {
   font-size: var(--h3-font);
@@ -95,6 +97,7 @@ header.sticky {
   color: var(--text-color);
   background-color: var(--main-color);
 }
+
 /* todo hamburger menu */
 /* todo change margin px to rem */
 #menu-icon {
@@ -108,6 +111,7 @@ header.sticky {
 section {
   /* padding: 140px 10% 90px; */
   height: 100vh;
+  height: 100svh;
   max-width: 135rem;
   margin: 0 auto;
 }
