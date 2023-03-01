@@ -22,10 +22,10 @@
 <body>
     <!-- header -->
     <header>
-        <a href="#" class="logo-name">dm<span class="logo-s-name">wasielewski</span></a>
+        <a href="https://dmwasielewski.dev" class="logo-name">dm<span class="logo-s-name">wasielewski</span></a>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
+            <li><a href="https://dmwasielewski.dev">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -132,22 +132,30 @@
                 <p>My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get
                     back to you!</p>
             </div>
+           
+             
             <div class="contact-form">
-                <form method="post" action="send-email.php" id="contact-form">
-                    <!-- <label for="name">Name</label> -->
-                    <input type="text" name="name" id="name" placeholder="Enter Your Name:" required>
+                <form method="post" action="./php/mailer.php" id="contact-form">
+                    
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name:">
 
-
-                    <input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-                        name="email" id="email" placeholder="Enter Your Email:" required>
-
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email:" required>
 
                     <input type="text" name="subject" id="subject" placeholder="Enter Your Subject:">
 
                     <textarea name="message" id="message" cols="40" rows="10" placeholder="Enter Your Message:"
                         required></textarea>
 
-                    <input type="submit" value="Submit" class="btn-send">
+                    <button name="submit" value="Submit" class="btn-send"> Submit</button>
+                    <?php 
+                                    $message = "";
+                                    if(isset($_GET['success']))
+                                      {
+                                        $message = " Your Message Has Been Sent ";
+                                        echo '<div class="mailer-success">'.$message.'</div>';
+                                      }
+                    ?>
+
                 </form>
             </div>
         </div>
