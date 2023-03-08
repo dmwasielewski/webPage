@@ -56,7 +56,7 @@
             <div class="project-card">
 
                 <div class="project-image">
-                    <img src="./images/portfolio1.jpg" alt="project image" class="project-img" />
+                    <img src="./images/rockPaperScissors.png" alt="project image" class="project-img" />
                 </div>
 
                 <div class="project-description">
@@ -67,9 +67,11 @@
                 </div>
 
                 <div class="project-btn">
-                    <a href="https://github.com/dmwasielewski" target="_blank" rel="stylesheet">
+                    <a href="https://github.com/dmwasielewski/smallProjects/tree/master/rockPaperScissorsGame"
+                        target="_blank" rel="stylesheet">
                         <i class="fa-brands fa-github"></i></a>
-                    <a href="https://twitter.com/dmwasielewski" target="_blank" rel="stylesheet">
+                    <a href="https://dmwasielewski.dev/projects/rockPaperScissorsGame/index.html" target="_blank"
+                        rel="stylesheet">
                         <i class="fa-solid fa-up-right-from-square"></i></i></a>
                 </div>
 
@@ -166,7 +168,7 @@
                         required></textarea>
 
                     <button name="submit" value="Submit" class="btn-send"> Submit</button>
-                    <!--                     
+
                     <?php 
                                     $message = "";
                                     if(isset($_GET['success']))
@@ -174,7 +176,7 @@
                                         $message = " Your Message Has Been Sent ";
                                         echo '<div class="mailer-success">'.$message.'</div>';
                                       }
-                    ?> -->
+                    ?>
 
                 </form>
             </div>
