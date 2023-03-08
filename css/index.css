@@ -16,7 +16,7 @@
 :root {
   /* --bg-color: hsl(236, 49%, 10%); */
   --bg-color: hsl(231, 81%, 8%);
-  --other-color: hsl(235, 40%, 15%);
+  --other-color: hsl(231, 78%, 12%);
   --text3-color: hsl(160, 40%, 85%);
   --text2-color: hsl(170, 70%, 90%);
   --text-color: hsl(190, 100%, 95%);
@@ -236,6 +236,7 @@ section {
   color: var(--main-color);
 }
 
+/* przestrzen kart */
 .projects-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -246,62 +247,103 @@ section {
   margin: 2rem;
   /* margin-top: 5rem; */
 }
-
-.row {
-  /* width: 20rem; */
-  /* max-width: 90%; */
-  /* min-width: 30rem; */
-  padding: 15px;
-  /* border-radius: 0.5rem; */
-  /* border-top: 3px solid transparent; */
-  border-bottom: 4px solid transparent;
-  background: var(--other-color);
-
-  /* margin: 2rem; */
-  border-radius: 0.7rem;
-  transition: all 0.6s ease;
-}
-
-.row img {
-  height: auto;
-  /* max-width: 55%; */
-  width: 100%;
-  border-radius: 0.7rem;
-  margin-bottom: 2rem;
-}
-
-.row:hover {
-  transform: scale(1.04) translateY(-5px);
-  /* border-top: 4px solid var(--main-color); */
-  border-bottom: 4px solid var(--main-color);
-  cursor: pointer;
-}
-
-.main-row {
+/* karty */
+.project-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
+  max-width: 370px;
+  width: 100%;
+  /* background: hsl(247, 86%, 11%); */
+  background: var(--other-color);
+  border-radius: 0.5rem;
+  padding: 20px;
+  /* czy tlo zsotaje do kart??? */
+  box-shadow: 3px 3px 2px var(--main-color);
+  position: relative;
 }
 
-.row h3 {
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  border-radius: 0.5rem;
+
+  background-color: var(--bg-color);
+}
+
+.project-image {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 140px;
+  width: 200px;
+  /* border-radius: 100%; */
+  /* border-radius: calc(0.5rem + 5px);
+   */
+  background-color: var(--other-color);
+  /* padding: 5px; */
+  margin-bottom: 3rem;
+}
+
+.project-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* margin: 20px; */
+  border-radius: 0.5rem;
+  /* border-radius: calc(10% + 3px); */
+  border: 3px solid var(--text-color);
+  /* margin-bottom: 2rem; */
+}
+
+.project-description h3 {
+  text-align: center;
+  margin-bottom: 2rem;
   font-size: var(--h3-font);
   font-weight: 600;
   letter-spacing: 1.5px;
   color: var(--main-color);
 }
 
-.row-icon {
-  font-size: 2.5rem;
-  color: var(--second-color);
+.project-description p {
+  font-size: var(--p-font);
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 2;
+  color: var(--text-color);
+  text-align: right;
+  margin-bottom: 2rem;
 }
 
-.row p {
-  font-size: var(--p-font);
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: var(--text-color);
-  margin-bottom: 2rem;
+.project-description p:nth-child(3) {
+  color: rgb(106, 106, 106);
+}
+
+.project-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  /* flex-direction: row; */
+  /* align-content: flex-start; */
+  gap: 25px;
+  font-size: 2.5rem;
+  color: var(--second-color);
+  cursor: pointer;
+}
+
+.project-btn a {
+  color: inherit;
+  transition: all 0.6s ease;
+}
+
+.project-btn a:hover {
+  transform: scale(1.2);
+  color: var(--main-color);
 }
 
 /* about */
@@ -430,7 +472,8 @@ form textarea {
   margin-bottom: 0.5rem;
   background: var(--other-color);
   color: var(--text-color);
-  font-family: inherit; // nie dziedzicza czcionki z body!!!
+  font-family: inherit;
+  /* nie dziedzicza czcionki z body!!! */
 }
 
 .contact-form textarea {
