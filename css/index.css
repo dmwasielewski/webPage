@@ -175,6 +175,7 @@ section {
 
 .projects {
   padding-top: 20vh;
+  padding-top: 20svh;
 }
 
 .projects-text {
@@ -199,9 +200,6 @@ section {
 
 /* space cards */
 .projects-content {
-  /* display: grid; */
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, auto)); */
-  /* align-items: center; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -296,6 +294,7 @@ section {
 .about {
   display: flex;
   padding-top: 25vh;
+  padding-top: 25svh;
   justify-content: space-between;
 }
 
@@ -342,6 +341,7 @@ section {
 
 .contact-me {
   padding-top: 25vh;
+  padding-top: 25svh;
   display: flex;
   gap: 10rem;
 }
