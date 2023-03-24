@@ -12,29 +12,27 @@
   scroll-behavior: smooth;
 }
 
-/* todo: usunac nie potrzebne kolory i dodac w kodzie potrzebne */
+
 :root {
-  /* --bg-color: hsl(236, 49%, 10%); */
-  --bg-color: hsl(231, 81%, 8%);
-  --other-color: hsl(231, 78%, 12%);
-  --text3-color: hsl(160, 40%, 85%);
-  --text2-color: hsl(170, 70%, 90%);
-  --text-color: hsl(190, 100%, 95%);
-  --textw-color: white;
-  /* --main-color: hsl(355, 78%, 56%); */
+
   --main-color: hsl(342, 72%, 50%);
-  /* --second-color: hsl(203, 39%, 44%); */
-  --second-color: #087e8b;
+  --second-color: hsl(193, 89%, 38%);
+
+  --bg-color: hsl(231, 81%, 8%);
+  --bg2-color: hsl(231, 78%, 12%);
+
+  --text-color: hsl(214, 100%, 95%);
+  --text3-color: rgb(152, 167, 213);
+
+  /* --text2-color: hsl(190, 100%, 95%); */
+  /* --main2-color: hsl(355, 78%, 56%); */
+
   --h1-font: 3rem;
   --h2-font: 2.5rem;
   --h3-font: 2rem;
   --h4-font: 1.8rem;
   --p-font: 1.5rem;
-  /* 
-    --test--: hsl(225, 31%, 74%);
-    --test--2: hsl(226, 70%, 88%);
-    --test--3: hsl(214, 100%, 95%);
-     */
+
 }
 
 html {
@@ -42,6 +40,8 @@ html {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg-color);
 }
+
+/* header */
 
 header {
   position: fixed;
@@ -52,19 +52,15 @@ header {
   align-items: center;
   justify-content: space-between;
   background: var(--bg-color);
-  border-color: var(--other-color);
+  border-color: var(--bg2-color);
   padding: 26px 10%;
-  /* nie potrzebne */
-  /* border-bottom: 1px solid transparent;
-    transition: all 0.4 ease; */
   z-index: 1000;
 }
 
 header.sticky {
   padding: 14px 10%;
   background: var(--bg-color);
-  border-bottom: 2px solid var(--other-color);
-  /* opacity: 0.95; */
+  border-bottom: 5px solid var(--bg2-color);
   transition: 0.4s;
 }
 
@@ -72,7 +68,6 @@ header.sticky {
   display: flex;
 }
 
-/* todo ustawic na klikniecie adres domeny strony */
 .logo-name {
   font-size: var(--h3-font);
   font-weight: 600;
@@ -87,7 +82,7 @@ header.sticky {
   font-size: var(--h4-font);
   font-weight: 600;
   padding: 5px 10px;
-  margin: 0 20px;
+  margin: 0 1.2rem;
   border-radius: 0.5rem;
   transition: all 0.6s ease;
   color: var(--second-color);
@@ -98,8 +93,6 @@ header.sticky {
   background-color: var(--main-color);
 }
 
-/* todo hamburger menu */
-/* todo change margin px to rem */
 #menu-icon {
   display: none;
   font-size: var(--h3-font);
@@ -109,22 +102,20 @@ header.sticky {
 }
 
 section {
-  /* padding: 140px 10% 90px; */
   height: 100vh;
   height: 100svh;
   max-width: 135rem;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 /* home */
 
 .home {
-  /* position: relative; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  /* border: solid red 3px; */
   margin-bottom: 10rem;
 }
 
@@ -148,31 +139,6 @@ section {
   color: var(--second-color);
 }
 
-/* 
-.main-text {
-    max-width: 100rem; 
-    margin: 0px 40px; 
-    text-align: center; 
-*/
-/* 
-.home-text h4 {
-    color: var(--main-color);
-    margin: 1.5rem 0;
-    font-size: var(--h4-font);
-    font-weight: 600;
-    letter-spacing: 1.5px;
-}
-
-.home-text p {
-    color: var(--text-color);
-    margin: 1.5rem 0;
-    text-align: justify;
-    font-size: var(--p-font);
-    font-weight: bold;
-    line-height: 2;
-    letter-spacing: 1.5px;
-} */
-
 .home-pp {
   display: flex;
   flex-direction: column;
@@ -181,13 +147,12 @@ section {
 
 .home-img-pp {
   width: 60%;
-  /* margin: 0 150px; */
   opacity: 0.9;
 }
 
 .btn-cv {
   display: inline-block;
-  margin: 15px;
+  margin: 1rem;
   text-align: center;
   width: 50%;
   padding: 7px 7px;
@@ -207,10 +172,9 @@ section {
 }
 
 /* projects */
-/* todo dodac margin do tekstow naglowkow bo nawigacja przyslania */
 
 .projects {
-  padding-top: 25vh;
+  padding-top: 20vh;
 }
 
 .projects-text {
@@ -220,7 +184,6 @@ section {
 
 .projects-text h2 {
   margin-bottom: 2.5rem;
-  /* margin-bottom: 4rem 0; */
   font-size: var(--h2-font);
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -228,39 +191,34 @@ section {
 }
 
 .projects-text h3 {
-  /* margin: 1.5rem 0; */
   font-size: var(--h3-font);
   font-weight: 600;
   letter-spacing: 1.5px;
-  /* border: 1px solid red; */
   color: var(--main-color);
 }
 
-/* przestrzen kart */
+/* space cards */
 .projects-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  /* justify-content: space-between; */
-  align-items: center;
-  /* text-align: center; */
-  gap: 2rem;
-  margin: 2rem;
-  /* margin-top: 5rem; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, auto)); */
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
 }
-/* karty */
+
+/* card */
 .project-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 370px;
-  width: 100%;
-  /* background: hsl(247, 86%, 11%); */
-  background: var(--other-color);
+  max-width: 38rem;
+  background: var(--bg2-color);
   border-radius: 0.5rem;
   padding: 20px;
-  /* czy tlo zsotaje do kart??? */
   box-shadow: 3px 3px 2px var(--main-color);
-  position: relative;
 }
 
 .project-card::before {
@@ -271,21 +229,14 @@ section {
   height: 30%;
   width: 100%;
   border-radius: 0.5rem;
-
   background-color: var(--bg-color);
 }
 
 .project-image {
-  display: flex;
-  flex-direction: row;
   position: relative;
-  height: 140px;
-  width: 200px;
-  /* border-radius: 100%; */
-  /* border-radius: calc(0.5rem + 5px);
-   */
-  background-color: var(--other-color);
-  /* padding: 5px; */
+  /* height: 140px; */
+  width: 60%;
+  background-color: var(--bg2-color);
   margin-bottom: 3rem;
 }
 
@@ -293,11 +244,8 @@ section {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* margin: 20px; */
   border-radius: 0.5rem;
-  /* border-radius: calc(10% + 3px); */
   border: 3px solid var(--text-color);
-  /* margin-bottom: 2rem; */
 }
 
 .project-description h3 {
@@ -320,16 +268,13 @@ section {
 }
 
 .project-description p:nth-child(3) {
-  color: rgb(106, 106, 106);
+  color: var(--text3-color);
 }
 
 .project-btn {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-
-  /* flex-direction: row; */
-  /* align-content: flex-start; */
   gap: 25px;
   font-size: 2.5rem;
   color: var(--second-color);
@@ -346,44 +291,21 @@ section {
   color: var(--main-color);
 }
 
-/* about */
+/* about-me */
 
 .about {
   display: flex;
   padding-top: 25vh;
-  /* align-items: center; */
   justify-content: space-between;
 }
 
 .about-img-pp {
-  /* position: relative; */
-  /* margin: 0 50px; */
-  margin-right: 100px;
+  margin-right: 10rem;
   opacity: 0.85;
 }
 
-/* .about-pp {
-    position: relative;
-}
-
-.about-pp::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 31px;
-    width: 80%;
-    height: 42%;
-    background-image: linear-gradient(120deg, var(--main-color), var(--second-color));
-    opacity: 0.5;
-}
-
-.about-pp:hover {
-    position: absolute;
-} */
-
 .about-text h2 {
   margin-bottom: 2.5rem;
-  /* margin-bottom: 4rem 0; */
   font-size: var(--h2-font);
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -391,7 +313,6 @@ section {
 }
 
 .about-text h3 {
-  /* margin: 1.5rem 0; */
   margin-bottom: 1rem;
   font-size: var(--h3-font);
   font-weight: 600;
@@ -405,7 +326,6 @@ section {
   font-weight: 500;
   line-height: 2;
   letter-spacing: 1px;
-
   text-align: justify;
   color: var(--text-color);
 }
@@ -413,7 +333,6 @@ section {
 .about-text h4 {
   font-size: var(--p-font);
   font-weight: 600;
-  /* line-height: 2; */
   letter-spacing: 1.5px;
   text-align: justify;
   color: var(--second-color);
@@ -423,16 +342,12 @@ section {
 
 .contact-me {
   padding-top: 25vh;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
   display: flex;
-  /* align-items: center; */
   gap: 10rem;
 }
 
 .contact-text h2 {
   margin-bottom: 2.5rem;
-  /* margin-bottom: 4rem 0; */
   font-size: var(--h2-font);
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -440,7 +355,6 @@ section {
 }
 
 .contact-text h3 {
-  /* margin: 1.5rem 0; */
   margin-bottom: 1rem;
   font-size: var(--h3-font);
   font-weight: 600;
@@ -454,7 +368,6 @@ section {
   font-weight: 500;
   line-height: 2;
   letter-spacing: 1px;
-
   text-align: justify;
   color: var(--text-color);
 }
@@ -468,22 +381,20 @@ form textarea {
   border-radius: 0.5rem;
   font-size: var(--p-font);
   letter-spacing: 2px;
-  /* font-weight: 600; */
   margin-bottom: 0.5rem;
-  background: var(--other-color);
+  background: var(--bg2-color);
   color: var(--text-color);
   font-family: inherit;
-  /* nie dziedzicza czcionki z body!!! */
+  /* they do not inherit font from body */
 }
 
 .contact-form textarea {
   resize: none;
   height: 15rem;
-  /* font-family: 'Montserrat', sans-serif; */
+
 }
 
 .btn-send {
-  /* display: inline-block; */
   border: none;
   outline: none;
   width: 35%;
@@ -492,13 +403,9 @@ form textarea {
   font-size: var(--p-font);
   letter-spacing: 2px;
   cursor: pointer;
-  /* background: var(--main-color); */
-  background: var(--other-color);
+  background: var(--bg2-color);
   font-weight: 600;
-  /* border: 2px solid var(--text-color); */
   transition: all 0.6s ease;
-  /* background-color: transparent; */
-  /* color: var(--text-color); */
   color: var(--second-color);
 }
 
@@ -506,7 +413,6 @@ form textarea {
   background-color: var(--main-color);
   color: var(--text-color);
   font-weight: 600;
-  /* border: 2px solid var(--main-color); */
 }
 
 .mailer-success {
@@ -514,17 +420,13 @@ form textarea {
   border: none;
   outline: none;
   width: 64%;
-  /* margin-left: 20px; */
   padding: 1rem;
   border-radius: 0.5rem;
   font-size: var(--p-font);
   letter-spacing: 2px;
   text-align: center;
-  /* justify-content: center; */
-
   font-weight: 500;
   border: 1.5px solid var(--text-color);
-
   background-color: var(--main-color);
   color: var(--text-color);
 }
@@ -534,12 +436,6 @@ form textarea {
 footer {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* height: 80vh; */
-  /* margin-top: 40vh; */
-  /* height: 2500vh;
-  padding-top: 250vh; */
   padding: 8rem;
   font-size: var(--p-font);
   text-align: center;
@@ -549,25 +445,20 @@ footer {
 }
 
 /* social-icons */
-/* todo social icons + top button */
 
 .social-icons {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* justify-content: space-around; */
   position: fixed;
-  bottom: 4rem;
-  left: 4rem;
+  bottom: 2rem;
+  left: 2rem;
   list-style: none;
-  /* z-index: -1; */
   font-size: 2.5rem;
-  /* color: var(--text-color); */
   color: var(--second-color);
 }
 
 .social li {
-  /* margin: 2rem 0; */
   margin-top: 2rem;
   cursor: pointer;
   transition: all 0.6s ease;
@@ -582,26 +473,26 @@ footer {
   color: var(--main-color);
 }
 
+/* top-icon */
+
 .top {
   position: fixed;
-  bottom: 4rem;
-  right: 4rem;
-  /* margin: 2rem 0; */
+  bottom: 2rem;
+  right: 2rem;
 }
 
-/* todo sprawdzic border radius wszedzie procenty czy remy rem zamiast px i kolory jako var*/
 .top i {
   color: var(--text-color);
   background: var(--second-color);
   font-size: 1.8rem;
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 0.5rem;
   transition: all 0.6s ease;
 }
 
 .top i:hover {
   transform: scale(1.15) translateY(-4px);
-  border-radius: 20%;
+  border-radius: 1rem;
   color: var(--bg-color);
   background: var(--main-color);
 }
