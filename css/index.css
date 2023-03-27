@@ -33,7 +33,6 @@
   --h4-font: 1.8rem;
   --p-font: 1.5rem;
   --psmall-font: 1.2rem;
-
 }
 
 html {
@@ -97,10 +96,6 @@ header.sticky {
 /* mobile-menu-icons */
 #mobile-menu-icons {
   display: none;
-  /* font-size: var(--h3-font);
-  z-index: 10001;
-  color: var(--text-color);
-  cursor: pointer; */
 }
 
 section {
@@ -393,7 +388,6 @@ form textarea {
 .contact-form textarea {
   resize: none;
   height: 15rem;
-
 }
 
 .btn-send {
@@ -503,7 +497,6 @@ footer {
 @media only screen and (max-width: 1400px) {
   section {
     max-width: 118rem;
-
   }
 
   .projects {
@@ -529,6 +522,14 @@ footer {
 @media only screen and (max-width: 420px) {
 
   /* header */
+  header {
+    padding: 26px 5%;
+  }
+
+  header.sticky {
+    padding: 20px 5%;
+  }
+
   .navbar {
     display: none;
   }
@@ -537,10 +538,8 @@ footer {
   #mobile-menu-icons {
     display: flex;
     font-size: var(--h3-font);
-    gap: 2rem;
+    gap: 1.8rem;
     list-style: none;
-    /* z-index: 10001; */
-    /* cursor: pointer; */
     color: var(--second-color);
   }
 
@@ -554,6 +553,13 @@ footer {
   }
 
   /* home */
+  .home {
+    /* margin-top: 30rem; */
+  }
+
+  .home-text h3 {
+    margin-top: 1rem;
+  }
 
   /* projects */
   .projects {
@@ -562,29 +568,62 @@ footer {
     height: 100%;
   }
 
+  .projects-text {
+    margin-bottom: 1rem;
+  }
+
+  .projects-text h2 {
+    margin-bottom: 1rem;
+  }
+
   /* space cards */
+  .project-card {
+    box-shadow: none;
+    border-bottom: 2px solid var(--main-color);
+  }
+
   /* card */
   /* about-me */
   .about {
     display: block;
     padding-top: 12vh;
     padding-top: 12svh;
-    height: 100%;
-    /* padding-top: 25vh; */
-    /* padding-top: 25svh; */
-    /* justify-content: space-between; */
+    height: 100vh;
+    height: 100svh;
+
   }
 
   .about-img-pp {
     display: none;
   }
 
+  .about-text h2 {
+    margin-bottom: 1rem;
+  }
+
+  .about-text p {
+    line-height: 1.6;
+    letter-spacing: normal;
+  }
+
+
+
   /* contact-me */
   .contact-me {
+    display: block;
     padding-top: 12vh;
     padding-top: 12svh;
     height: 85%;
     /* text-align: center; */
+  }
+
+  .contact-text h2 {
+    margin-bottom: 1rem;
+  }
+
+  .contact-text p {
+    line-height: 1.6;
+    letter-spacing: normal;
   }
 
   .contact-form {
@@ -604,7 +643,6 @@ footer {
   /* social-icons */
   .social-icons {
     display: none;
-
   }
 
   /* top-icon */
