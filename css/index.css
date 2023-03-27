@@ -334,7 +334,10 @@ section {
   color: var(--second-color);
 }
 
-/* contact-me */
+/* contact */
+.contact {
+  height: 80vh;
+}
 
 .contact-me {
   padding-top: 25vh;
@@ -606,15 +609,16 @@ footer {
     letter-spacing: normal;
   }
 
+  /* contact */
+  .contact {
+    height: 90vh;
+    height: 90svh;
+  }
 
-
-  /* contact-me */
   .contact-me {
     display: block;
     padding-top: 12vh;
     padding-top: 12svh;
-    height: 85%;
-    /* text-align: center; */
   }
 
   .contact-text h2 {
@@ -642,7 +646,19 @@ footer {
 
   /* social-icons */
   .social-icons {
-    display: none;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    position: static;
+    /* bottom: 2rem; */
+    /* left: 2rem; */
+    list-style: none;
+  }
+
+  .social li {
+    margin-top: 2rem;
+    cursor: none;
+
   }
 
   /* top-icon */
@@ -650,5 +666,3 @@ footer {
     display: none;
   }
 }
-
-@media only screen and (max-width: 380px) {}
