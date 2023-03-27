@@ -23,7 +23,16 @@
     <!-- header -->
     <header>
         <a href="https://dmwasielewski.dev" class="logo-name">dm<span class="logo-s-name">wasielewski</span></a>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <ul id="mobile-menu-icons">
+            <li><a href="#home">
+                    <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#projects">
+                    <i class="fa-solid fa-list"></i></a></li>
+            <li><a href="#about">
+                    <i class="fa-solid fa-message"></i></a></li>
+            <li><a href="#contact">
+                    <i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
         <ul class="navbar">
             <li><a href="https://dmwasielewski.dev">Home</a></li>
             <li><a href="#projects">Projects</a></li>

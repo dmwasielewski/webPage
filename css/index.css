@@ -32,6 +32,7 @@
   --h3-font: 2rem;
   --h4-font: 1.8rem;
   --p-font: 1.5rem;
+  --psmall-font: 1.2rem;
 
 }
 
@@ -58,7 +59,7 @@ header {
 }
 
 header.sticky {
-  padding: 14px 10%;
+  padding: 20px 10%;
   background: var(--bg-color);
   border-bottom: 5px solid var(--bg2-color);
   transition: 0.4s;
@@ -93,12 +94,13 @@ header.sticky {
   background-color: var(--main-color);
 }
 
-#menu-icon {
+/* mobile-menu-icons */
+#mobile-menu-icons {
   display: none;
-  font-size: var(--h3-font);
+  /* font-size: var(--h3-font);
   z-index: 10001;
   color: var(--text-color);
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 section {
@@ -337,7 +339,7 @@ section {
   color: var(--second-color);
 }
 
-/* contact */
+/* contact-me */
 
 .contact-me {
   padding-top: 25vh;
@@ -496,3 +498,119 @@ footer {
   color: var(--bg-color);
   background: var(--main-color);
 }
+
+/* media queries */
+@media only screen and (max-width: 1400px) {
+  section {
+    max-width: 118rem;
+
+  }
+
+  .projects {
+    padding-top: 15vh;
+    padding-top: 15svh;
+  }
+
+  .projects-text {
+    margin-bottom: 5rem;
+  }
+
+  .project-card {
+    max-width: 35rem;
+  }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+  /* header */
+  .navbar {
+    display: none;
+  }
+
+  /* mobile-menu-icons */
+  #mobile-menu-icons {
+    display: flex;
+    font-size: var(--h3-font);
+    gap: 2rem;
+    list-style: none;
+    /* z-index: 10001; */
+    /* cursor: pointer; */
+    color: var(--second-color);
+  }
+
+  #mobile-menu-icons li a {
+    color: inherit;
+  }
+
+  #mobile-menu-icons li:hover {
+    transform: scale(1.2) translateY(-4px);
+    color: var(--main-color);
+  }
+
+  /* home */
+
+  /* projects */
+  .projects {
+    padding-top: 12vh;
+    padding-top: 12svh;
+    height: 100%;
+  }
+
+  /* space cards */
+  /* card */
+  /* about-me */
+  .about {
+    display: block;
+    padding-top: 12vh;
+    padding-top: 12svh;
+    height: 100%;
+    /* padding-top: 25vh; */
+    /* padding-top: 25svh; */
+    /* justify-content: space-between; */
+  }
+
+  .about-img-pp {
+    display: none;
+  }
+
+  /* contact-me */
+  .contact-me {
+    padding-top: 12vh;
+    padding-top: 12svh;
+    height: 85%;
+    /* text-align: center; */
+  }
+
+  .contact-form {
+    display: none;
+  }
+
+  /* footer */
+  footer {
+    padding: 2rem;
+    font-size: var(--psmall-font);
+    text-align: center;
+    color: var(--second-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  /* social-icons */
+  .social-icons {
+    display: none;
+
+  }
+
+  /* top-icon */
+  .top {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 380px) {}
