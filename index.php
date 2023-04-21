@@ -3,18 +3,19 @@
 
 <head>
     <!-- encoding -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <!-- browsers -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- scaling -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Damian Wasielewski personal page with the web development projects.">
     <title>dmwasielewski</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- fontAwesome -->
-    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
     <!-- js -->
     <script src="./js/index.js" defer></script>
 </head>
@@ -50,9 +51,9 @@
             <h2>and I'm a Junior web developer</h2>
         </div>
         <div class="home-pp">
-            <img src="./images/pp1.png" alt="profile picture" class="home-img-pp" />
+            <img src="./images/pp1.png" alt="profile picture" class="home-img-pp">
             <a href="./files/cv_Damian_Wasielewski.pdf" class="btn-cv" download="cv_Damian_Wasielewski.pdf"
-                target="_blank">Download CV <i class="fa-solid fa-angles-down"></i></i></a>
+                target="_blank">Download CV <i class="fa-solid fa-angles-down"></i></a>
         </div>
     </section>
 
@@ -67,7 +68,7 @@
             <div class="project-card">
 
                 <div class="project-image">
-                    <img src="./images/rockPaperScissors.png" alt="project image" class="project-img" />
+                    <img src="./images/rockPaperScissors.png" alt="project image" class="project-img">
                 </div>
 
                 <div class="project-description">
@@ -83,14 +84,14 @@
                         <i class="fa-brands fa-github"></i></a>
                     <a href="https://dmwasielewski.dev/projects/rockPaperScissorsGame/index.html" target="_blank"
                         rel="stylesheet">
-                        <i class="fa-solid fa-up-right-from-square"></i></i></a>
+                        <i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
 
             </div>
             <div class="project-card">
 
                 <div class="project-image">
-                    <img src="./images/portfolio1.jpg" alt="project image" class="project-img" />
+                    <img src="./images/portfolio1.jpg" alt="project image" class="project-img">
                 </div>
 
                 <div class="project-description">
@@ -104,14 +105,14 @@
                     <a href="https://github.com/dmwasielewski" target="_blank" rel="stylesheet">
                         <i class="fa-brands fa-github"></i></a>
                     <a href="https://twitter.com/dmwasielewski" target="_blank" rel="stylesheet">
-                        <i class="fa-solid fa-up-right-from-square"></i></i></a>
+                        <i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
 
             </div>
             <div class="project-card">
 
                 <div class="project-image">
-                    <img src="./images/portfolio1.jpg" alt="project image" class="project-img" />
+                    <img src="./images/portfolio1.jpg" alt="project image" class="project-img">
                 </div>
 
                 <div class="project-description">
@@ -125,7 +126,7 @@
                     <a href="https://github.com/dmwasielewski" target="_blank" rel="stylesheet">
                         <i class="fa-brands fa-github"></i></a>
                     <a href="https://twitter.com/dmwasielewski" target="_blank" rel="stylesheet">
-                        <i class="fa-solid fa-up-right-from-square"></i></i></a>
+                        <i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
 
             </div>
@@ -138,7 +139,7 @@
     <!-- about-me -->
     <section class="about" id="about">
         <div class="about-pp">
-            <img class="about-img-pp" src="./images/5.png" alt="profile picture" srcset="">
+            <img class="about-img-pp" src="./images/5.png" alt="profile picture">
         </div>
         <div class="about-text">
             <h2>About me</h2>
@@ -207,7 +208,6 @@
                     <li><a href="https://github.com/dmwasielewski" target="_blank" rel="stylesheet">
                             <i class="fa-brands fa-github"></i></a></li>
                 </ul>
-
             </div>
         </div>
 
@@ -216,7 +216,7 @@
     <!-- footer -->
     <footer>
         <h4>dmwasielewski</h4>
-        <p>&copy 2023 by Damian Wasielewski. All rights reserved.</p>
+        <p>&copy; 2023 by Damian Wasielewski. All rights reserved.</p>
     </footer>
 
     <!-- top-icon -->
