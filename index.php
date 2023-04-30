@@ -9,7 +9,7 @@
     <!-- scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Damian Wasielewski personal page with the web development projects.">
-    <title>dmwasielewskiTEST</title>
+    <title>dmwasielewski</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- fontAwesome -->
