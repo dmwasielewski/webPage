@@ -171,9 +171,9 @@
             <div class="contact-form">
                 <form method="post" action="./php/mailer.php" id="contact-form">
 
-                    <input type="text" name="name" id="name" placeholder="Enter Your Name:">
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name:" required pattern="(^[a-zA-Z]{1,30} [a-zA-Z]{1,30}$)">
 
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email:" required>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email:" required >
 
                     <input type="text" name="subject" id="subject" placeholder="Enter Your Subject:">
 
