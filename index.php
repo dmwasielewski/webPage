@@ -96,7 +96,7 @@
 
                 <div class="project-description">
                     <h3>Shopping List</h3>
-                    <p>Your personal shopping list - CRUD with JavaScript</p>
+                    <p>Your personal shopping list - CRUD built with JavaScript</p>
                     <p>HTML CSS JS</p>
 
                 </div>
