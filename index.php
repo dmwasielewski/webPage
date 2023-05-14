@@ -91,7 +91,7 @@
             <div class="project-card">
 
                 <div class="project-image">
-                    <img src="./images/portfolio1.jpg" alt="project image" class="project-img">
+                    <img src="./images/shoppingList.png" alt="project image" class="project-img">
                 </div>
 
                 <div class="project-description">
