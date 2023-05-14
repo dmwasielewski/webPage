@@ -95,8 +95,8 @@
                 </div>
 
                 <div class="project-description">
-                    <h3>Rock Paper Scissors Game</h3>
-                    <p>A classic game - Rock, Paper, Scissors built with JavaScript</p>
+                    <h3>Shopping List</h3>
+                    <p>Your personal shopping list - CRUD with JavaScript</p>
                     <p>HTML CSS JS</p>
 
                 </div>
