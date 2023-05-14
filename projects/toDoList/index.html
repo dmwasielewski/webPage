@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Shopping List</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img width="150px" height="150px" src="./images/ShoppingList.svg" alt="Shopping List">
+            <h1>Shopping List</h1>
+        </header>
+        <form id="item-form" class="item-form">
+            <div class="item-form-control">
+                <input type="text" id="item-form-input" class="item-form-input" name="item" pattern="[a-zA-Z]+"
+                    placeholder="Please enter item">
+            </div>
+            <div class="item-form-control">
+                <button type="submit" id="btn-add" class="btn-add">
+                    <i class="fa-solid fa-plus"></i> Add Item
+                </button>
+            </div>
+        </form>
+
+        <div id="item-filter" class="item-filter">
+            <div class="item-form-control">
+                <input type="text" id="item-form-filter" class="item-form-filter" placeholder="Filter Items" />
+            </div>
+            <div class="item-form-control">
+                <button id="btn-clear" class="btn-clear">
+                    <i class="fa-solid fa-trash"></i> Delete List</button>
+            </div>
+        </div>
+
+
+        <ul id="item-list" class="item-list">
+
+        </ul>
+
+
+
+    </div>
+</body>
+
+</html>

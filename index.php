@@ -102,9 +102,10 @@
                 </div>
 
                 <div class="project-btn">
-                    <a href="https://github.com/dmwasielewski" target="_blank" rel="stylesheet">
+                    <a href="https://github.com/dmwasielewski/smallProjects/tree/master/toDoList"
+                        target="_blank" rel="stylesheet">
                         <i class="fa-brands fa-github"></i></a>
-                    <a href="https://twitter.com/dmwasielewski" target="_blank" rel="stylesheet">
+                    <a href="https://dmwasielewski.dev/projects/toDoList/index.html" target="_blank" rel="stylesheet">
                         <i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
 
