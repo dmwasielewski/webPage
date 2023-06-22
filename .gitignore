@@ -396,7 +396,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-.vscode/settings.json
+
 # .gitignore
-.prettierrc.json
 .idea
+.vscode
+.prettierrc.json
